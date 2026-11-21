@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Route 572: A Pokémon Black 2 &amp; White 2 Basemap</title>
+
+    <!-- Scrollmap library (loaded before style.css so custom styles win) -->
+    <link rel="stylesheet" href="lib/scrollmap.css">
+
+    <!-- Fonts: Press Start 2P (titles) + Pixelify Sans (everything else) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="content">
+
+    <!-- ===== title ===== -->
+    <div class="row" style="background-image:url(assets/scale1_city.png); background-size:cover; background-position:center;">
+        <div class="center title">
+            <div class="title-box">
+                <h1>Route 572</h1>
+                <div class="title-tag">
+                    <p class="subtitle">A Pokémon Black 2 &amp; White 2 Basemap</p>
+                    <p class="author">By: Aaron Ruplinger</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== intro ===== -->
+    <div class="row">
+        <div class="center">
+            <p class="dialog"> This map is a recreation of Pokemon Black 2 & White 2, my first and favorite Pokémon game I've ever played.
+        </div>
+    </div>
+
+    <!-- ===== inspo board ===== -->
+    <div class="row tight">
+        <div class="center">
+            <h2>Inspiration</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left">
+            <img class="insp" src="assets/striaton.webp" alt="Striaton City">
+            <img class="insp" src="assets/icirrus.webp" alt="Icirrus City">
+            <img class="insp" src="assets/route20.webp" alt="Route 20">
+        </div>
+        <div class="right">
+            <p class="vert-center dialog">I took inspiration from these locations in the overworld for my basemap.</p>
+        </div>
+    </div>
+
+    <!-- ===== sidecar ===== -->
+    <div class="row tight">
+        <div class="center">
+            <h2>Four places at the same scale</h2>
+            <p class="dialog">Here are four places around Madison, Wisconsin, but at the same scale.</p>
+        </div>
+    </div>
+
+    <div class="scroll-container">
+        <div class="background-item">
+            <img src="assets/loc1_capitol.png" data-slide="1" class="fill">
+            <img src="assets/loc2_universitybay.png" data-slide="2" class="fill hidden">
+            <img src="assets/loc3_spiritlake.png" data-slide="3" class="fill hidden">
+            <img src="assets/loc4_rural.png" data-slide="4" class="fill hidden">
+        </div>
+        <div class="foreground-item">
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin"><b>Capitol Square, Madison</b> This is the heart of downtown Madison with lots of buildings everywhere.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin"><b>University Bay, Lake Mendota</b> This is the bay near the university with Picnic Point in frame as well.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin"><b>Devil's Lake State Park</b> This is Devil's Lake State Park, but here it is named Spirit Lake.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin"><b>Farmland</b> This is farmland that's near Mount Horeb.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== slideshow ===== -->
+    <div class="row tight">
+        <div class="center">
+            <h2>This is the map at different scales.</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="center-wide">
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="assets/scale3_global.png">
+                    <p class="caption">Continental scale</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/scale2_region.png">
+                    <p class="caption">Regional scale</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/scale1_city.png">
+                    <p class="caption">City scale</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/scale4_local.png">
+                    <p class="caption">Local scale</p>
+                </div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+                <div class="slideshow-dots">
+                    <span class="dot" id="1"></span>
+                    <span class="dot" id="2"></span>
+                    <span class="dot" id="3"></span>
+                    <span class="dot" id="4"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== iframe ===== -->
+    <div class="row tight">
+        <div class="center">
+            <h2>Explore the Map Here</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="center-wide">
+            <iframe class="fit" src="https://api.mapbox.com/styles/v1/ajruplinger/cmwk0uadn026b01s6078r2eoi.html?title=view&access_token=pk.eyJ1IjoiYWpydXBsaW5nZXIiLCJhIjoiY213NG00Z3dyMDdwdjJ5cTEzd3o2amJwYSJ9.n6i-O1RS5G9au3U7ejVYGA&zoomwheel=true&fresh=true#11/43.075/-89.4"></iframe>
+        </div>
+    </div>
+
+    <!-- ===== credits ===== -->
+    <div class="row no-margin">
+        <div class="center">
+            <div class="credits">
+                <p><b>Credits:</b></p>
+                <p>Map created with Mapbox Studio</p>
+                <p>Data from OpenStreetMap</p>
+                <p>Style inspired by Pokémon Black 2 &amp; White 2</p>
+                <p>Forest, water, and grass textures adapted from fan-made B/W tilesets (by भाग्य ज्योति and chimcharsfireworks).</p>
+                <p>Fonts: Press Start 2P and Pixelify Sans via Google Fonts.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- scrollmap script -->
+<script type="text/javascript" src="lib/scrollmap.js"></script>
+</body>
+</html>
